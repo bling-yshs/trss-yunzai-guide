@@ -1,6 +1,6 @@
 # trss-yunzai-guide
 
-草履虫都能看懂的 Linux 下使用 Trss 脚本部署 云崽 的教程
+草履虫都能看懂的 Linux 下使用 Trss 脚本部署 [云崽](https://github.com/yoimiya-kokomi/Miao-Yunzai) 的教程
 
 ## 材料准备
 
@@ -109,7 +109,9 @@
    exit
    ```
 
-10. 大功告成
+10. 有可能触发滑动验证码，按住 shift 不松开，用鼠标选择网址，复制，然后在本机浏览器打开，自己过一下验证码就好
+
+11. 大功告成
 
 ### 安装云崽插件
 
@@ -125,3 +127,9 @@
 2. tsab 界面操作快捷键 https://trss.me/Guide/Command.html
 
 3. trss 容器内文件已映射到 `/root/TRSS_AllBot`，可以直接在容器外进行修改
+
+### 鸣谢
+
+[Trss](https://github.com/TimeRainStarSky/TRSS_Script)
+
+[喵云崽](https://github.com/yoimiya-kokomi/Miao-Yunzai)
