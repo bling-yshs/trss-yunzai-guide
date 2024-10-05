@@ -1,9 +1,11 @@
 name: 🔁 同步到 Gitee
+
 on:
   workflow_dispatch:
   push:
     branches:
       - main
+
 jobs:
   sync-to-gitee:
     name: 🔁 同步到 Gitee
