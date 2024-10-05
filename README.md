@@ -120,6 +120,8 @@
 
 ### 附录
 
-1. tsab 界面操作快捷键 https://trss.me/Guide/Command.html
+1. 云崽插件库 https://gitee.com/yhArcadia/Yunzai-Bot-plugins-index
 
-2. trss 容器内文件已映射到 `/root/TRSS_AllBot`，可以直接在容器外进行修改
+2. tsab 界面操作快捷键 https://trss.me/Guide/Command.html
+
+3. trss 容器内文件已映射到 `/root/TRSS_AllBot`，可以直接在容器外进行修改
