@@ -1,0 +1,20 @@
+name: 🔁 同步到 Gitee
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+jobs:
+  sync-to-gitee:
+    name: 🔁 同步到 Gitee
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync to gitee
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: github/bling-yshs
+          dst: gitee/bling_yshs
+          force_update: true
+          dst_key: ${{ secrets.MY_SSH_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_PERSIONAL_TOKEN }}
+          static_list: "trss-yunzai-guide"
