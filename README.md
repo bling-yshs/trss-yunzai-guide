@@ -97,21 +97,27 @@
    curl -L Gitee.com/haanxuan/QSign/raw/main/X | bash
    ```
 
-8. 没报错，就输入
+8. 没出现红色字，就输入
 
    ```shell
    curl https://gitee.com/bling_yshs/res-repo/raw/master/yunzai/script/trss-redis-fix.sh | bash
    ```
 
-9. 没报错，就输入
+9. 没出现红色字，就输入
+
+   ```shell
+   curl https://gitee.com/bling_yshs/res-repo/raw/master/yunzai/script/qq-pic-read-fix.sh | bash
+   ```
+
+10. 没出现红色字，就输入
 
    ```shell
    exit
    ```
 
-10. 有可能触发滑动验证码，按住 shift 不松开，用鼠标选择网址，复制，然后在本机浏览器打开，自己过一下验证码就好
+11. 有可能触发滑动验证码，按住 shift 不松开，用鼠标选择网址，复制，然后在本机浏览器打开，自己过一下验证码就好
 
-11. 大功告成
+12. 大功告成
 
 ### 安装云崽插件
 
