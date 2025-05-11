@@ -2,6 +2,9 @@
 
 草履虫都能看懂的 Linux 下使用 Trss 脚本部署 [云崽](https://github.com/yoimiya-kokomi/Miao-Yunzai) 的教程
 
+> [!WARNING]  
+> 如果签名API拉闸了，请观看使用 napcat 的教程 https://github.com/bling-yshs/trss-yunzai-napcat-guide
+
 ## 材料准备
 
 - 一台 Linux 服务器（本地、云服务器或挂机宝均可）
@@ -91,31 +94,32 @@
 
 6. 输入QQ小号的账号密码，登录设备选 `aPad`，主人QQ号填自己QQ，签名API地址留空
 
-7. 会提示登录失败，别急，ctrl+c 退出，选 `启动 fish`，输入以下命令
+7. 会提示登录失败，别急，ctrl+c 退出，选 `启动 fish`，输入以下命令（用来切换签名API）
 
    ```shell
    curl -L Gitee.com/haanxuan/QSign/raw/main/X | bash
    ```
 
-8. 没出现红色字，就输入
+8. 没出现红色字，就输入（用来为 redis 启用 AOF 日志）
 
    ```shell
    curl https://gitee.com/bling_yshs/res-repo/raw/master/yunzai/script/trss-redis-fix.sh | bash
    ```
 
-9. 没出现红色字，就输入
+9. 没出现红色字，就输入（用来修复 QQ 图片获取失败的问题）
 
    ```shell
    curl https://gitee.com/bling_yshs/res-repo/raw/master/yunzai/script/qq-pic-read-fix.sh | bash
    ```
 
-10. 没出现红色字，就输入
+10. 没出现红色字，就输入（用来退出 fish，会自动重启云崽）
 
-   ```shell
-   exit
-   ```
+    ```shell
+    exit
+    ```
 
 11. 有可能触发滑动验证码，按住 shift 不松开，用鼠标选择网址，复制，然后在本机浏览器打开，自己过一下验证码就好
+   > 如果有 「登陆频繁 237」 之类的提示，把滑动验证码发到手机上，用手机浏览器过一下验证就行
 
 12. 大功告成
 
