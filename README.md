@@ -3,7 +3,7 @@
 草履虫都能看懂的 Linux 下使用 Trss 脚本部署 [云崽](https://github.com/yoimiya-kokomi/Miao-Yunzai) 的教程
 
 > [!WARNING]  
-> 如果签名API拉闸了，请观看使用 napcat 的教程 https://github.com/bling-yshs/trss-yunzai-napcat-guide
+> 如果签名API拉闸了，请查看使用 napcat 连接云崽的教程 https://github.com/bling-yshs/trss-yunzai-napcat-guide
 
 ## 材料准备
 
@@ -94,11 +94,13 @@
 
 6. 输入QQ小号的账号密码，登录设备选 `aPad`，主人QQ号填自己QQ，签名API地址留空
 
-7. 会提示登录失败，别急，ctrl+c 退出，选 `启动 fish`，输入以下命令（用来切换签名API）
+7. ~~会提示登录失败，别急，ctrl+c 退出，选 `启动 fish`，输入以下命令（用来切换签名API）~~
 
    ```shell
    curl -L Gitee.com/haanxuan/QSign/raw/main/X | bash
    ```
+   
+   **2025.5.15 签名API关闭了，请查看使用 napcat 连接云崽的教程 https://github.com/bling-yshs/trss-yunzai-napcat-guide ，可以将此步骤移动到第9步结束以后再执行**
 
 8. 没出现红色字，就输入（用来为 redis 启用 AOF 日志）
 
